@@ -32,6 +32,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest'
+  # gem 'minitest'
   gem 'shoulda-matchers'
 end
