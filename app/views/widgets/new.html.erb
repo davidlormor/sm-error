@@ -1,0 +1,11 @@
+<h1>Add a widget</h1>
+
+<% @widget.errors.full_messages.each do |error| %>
+  <p><%= error %></p>
+<% end %>
+
+<%= form_for @widget do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+<% end %>

@@ -1,0 +1,5 @@
+<h1>Widgets</h1>
+<% @widgets.each do |widget| %>
+  <p>Widget: <%= link_to widget.name, widget %></p>
+<% end %>
+<%= link_to "Add Widget", new_widget_path %>
